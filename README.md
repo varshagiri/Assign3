@@ -20,6 +20,7 @@ TEST.SH
 Please create pointless.sh, changing from printing your hostname with $HOSTNAME, to your $USER
 
 `
+varshagi@trgn510 bin $ ./pointless.sh
 varshagi
 5
 6
