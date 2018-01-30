@@ -29,7 +29,16 @@ varshagi
 
 ### 2
 Please create quotequotes.sh, please add 1 additional lines that prints the process id of the current script using a special variable in a sentence: "The process id for this script is **235**'
-*REPLACE WITH RESULTS*
+
+`
+[varshagi@trgn510 bin]$ ./quotequotes.sh
+varshagi
+VARIABLE
+I am on varshagi
+I am on $USER
+I am on $USER
+The process id of this script is 1609
+'
 
 ### 3
 Please create processes.sh.  Modify it such that it prints the top 5 CPU consuming processes
