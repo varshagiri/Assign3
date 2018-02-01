@@ -43,8 +43,10 @@ The process id of this script is 1609
 ### 3
 Please create processes.sh.  Modify it such that it prints the top 5 CPU consuming processes
 
-*REPLACE WITH RESULTS*
-
+`
+[varshagi@trgn510 bin]$ ./processes.sh
+varshagi 17625 0.0 0.0 112660 956 pts/0 S+ 01:55 0:00 grep varshagi varshagi 17624 0.0 0.0 107912 668 pts/0 S+ 01:55 0:00 head -5 varshagi 17623 0.0 0.0 118500 912 pts/0 S+ 01:55 0:00 sort -nrk 3,3 varshagi 17622 0.0 0.0 151064 1808 pts/0 R+ 01:55 0:00 ps aux varshagi 17621 0.0 0.0 113128 556 pts/0 S+ 01:55 0:00 /bin/bash ./processes.sh
+`
 ### 4
 Please create makeupper.sh.  Modify it to return lower case results, and change the name to makelower.sh
 
