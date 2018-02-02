@@ -52,6 +52,7 @@ yunchili 30652 0.0 0.0 115524 2184 pts/5 Ss+ 00:05 0:00 -bash yunchili 30651 0.0
 Please create makeupper.sh.  Modify it to return lower case results, and change the name to makelower.sh
 
 '
+
 [varshagi@trgn510 bin]$ ps -ef | makelower.sh
 uid        pid  ppid  c stime tty          time cmd
 root         1     0  0 jan19 ?        00:02:58 /usr/lib/systemd/systemd --switched-root --system --deserialize 19
@@ -61,8 +62,10 @@ root         1     0  0 jan19 ?        00:02:58 /usr/lib/systemd/systemd --switc
 ### 5
 Referring to math.sh, create a script called add.sh that takes two inputs and adds them, **add.sh 5 3** 
 '
+
 [varshagi@trgn510 bin]$ add.sh 9 9
 18
+
 '
 
 ### 6
@@ -74,6 +77,7 @@ Create a program "mb_or_kb.sh", referring to bigornot.sh and useful.sh, create a
 Create a program "count_by_to.sh", referring to count.sh.  The file should take two arguments, and should count jumping by the first argument until the second argument is reached, starting at 0.  For example, *count.sh 2 10* would print 0 2 4 6 8 10
 
 `
+
 [varshagi@trgn510 bin]$ count.sh 2 10
 0
 2
@@ -81,15 +85,18 @@ Create a program "count_by_to.sh", referring to count.sh.  The file should take 
 6
 8
 10
+
 `
 
 ### 9
 Please create whatgene.sh.  Please edit such that the function print_gene, prints upper case of the input.
 
 `
+
 [varshagi@trgn510 bin]$ ./whatgene.sh
 mygene PTEN
 mygene Jupiter
+
 `
 
 ### 10
