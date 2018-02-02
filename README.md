@@ -45,16 +45,25 @@ Please create processes.sh.  Modify it such that it prints the top 5 CPU consumi
 
 `
 [varshagi@trgn510 bin]$ ./processes.sh
-varshagi 17625 0.0 0.0 112660 956 pts/0 S+ 01:55 0:00 grep varshagi varshagi 17624 0.0 0.0 107912 668 pts/0 S+ 01:55 0:00 head -5 varshagi 17623 0.0 0.0 118500 912 pts/0 S+ 01:55 0:00 sort -nrk 3,3 varshagi 17622 0.0 0.0 151064 1808 pts/0 R+ 01:55 0:00 ps aux varshagi 17621 0.0 0.0 113128 556 pts/0 S+ 01:55 0:00 /bin/bash ./processes.sh
+yunchili 30652 0.0 0.0 115524 2184 pts/5 Ss+ 00:05 0:00 -bash yunchili 30651 0.0 0.0 147844 2268 ? S 00:05 0:00 sshd: yunchili@pts/5 yunchili 28825 0.0 0.0 115524 2188 pts/4 Ss+ Feb01 0:00 -bash yunchili 28824 0.0 0.0 147844 2400 ? S Feb01 0:00 sshd: yunchili@pts/4 yunchili 28000 0.0 0.0 115524 2208 pts/0 Ss+ Feb01 0:00 -bash
+
 `
 ### 4
 Please create makeupper.sh.  Modify it to return lower case results, and change the name to makelower.sh
 
-*REPLACE WITH RESULTS for ps -ef | makeupper.sh*
+'
+[varshagi@trgn510 bin]$ ps -ef | makelower.sh
+uid        pid  ppid  c stime tty          time cmd
+root         1     0  0 jan19 ?        00:02:58 /usr/lib/systemd/systemd --switched-root --system --deserialize 19
+
+'
 
 ### 5
-Referring to math.sh, create a script called add.sh that takes two inputs and adds them, **add.sh 5 3** would print 8
-*REPLACE WITH RESULTS FOR add.sh 9 9*
+Referring to math.sh, create a script called add.sh that takes two inputs and adds them, **add.sh 5 3** 
+'
+[varshagi@trgn510 bin]$ add.sh 9 9
+18
+'
 
 ### 6
 Create a program "mb_or_kb.sh", referring to bigornot.sh and useful.sh, create a script called big file that checks to see if the file exists provided as the first argument exists, and if it exists then gets the filesize, storing it as a variable. I have not provided you with a way to get filesize in exercise, and expect you to search web for a way.  The program then checks to see if the size is greater than 1,000,000.  If its less then 1,000,000, it prints the number of kilobytes (divide by 1000) followed by "kB".  If its greater than 1,000,000, then print the number of megabytes followed by "MB".
@@ -64,12 +73,24 @@ Create a program "mb_or_kb.sh", referring to bigornot.sh and useful.sh, create a
 ### 7
 Create a program "count_by_to.sh", referring to count.sh.  The file should take two arguments, and should count jumping by the first argument until the second argument is reached, starting at 0.  For example, *count.sh 2 10* would print 0 2 4 6 8 10
 
-*REPLACE WITH RESULTS for mb_or_kb.sh ~/.bashrc*
+`
+[varshagi@trgn510 bin]$ count.sh 2 10
+0
+2
+4
+6
+8
+10
+`
 
 ### 9
 Please create whatgene.sh.  Please edit such that the function print_gene, prints upper case of the input.
 
-*REPLACE WITH RESULTS*
+`
+[varshagi@trgn510 bin]$ ./whatgene.sh
+mygene PTEN
+mygene Jupiter
+`
 
 ### 10
 Please create a bash shell called "genotype.sh" that takes a VCF as argument 1, and prints space delimited chromosome, position, reference, alternative, and genotype for all genotypes in VCF.
