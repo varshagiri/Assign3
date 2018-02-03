@@ -25,6 +25,7 @@ Please create pointless.sh, changing from printing your hostname with $HOSTNAME,
 varshagi
 5
 6
+
 `
 
 ### 2
@@ -38,6 +39,7 @@ I am on varshagi
 I am on $USER
 I am on $USER
 The process id of this script is 1609
+
 `
 
 ### 3
@@ -67,6 +69,7 @@ root         8     2  0 jan19 ?        00:00:00 [rcu_bh]
 root         9     2  0 jan19 ?        00:00:59 [rcu_sched]
 root        10     2  0 jan19 ?        00:00:05 [watchdog/0]
 root        11     2  0 jan19 ?        00:00:04 [watchdog/1]
+
 `
 
 ### 5
