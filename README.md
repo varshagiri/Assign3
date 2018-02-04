@@ -85,7 +85,7 @@ Create a program "mb_or_kb.sh", referring to bigornot.sh and useful.sh, create a
 
 `
 
-[varshagi@trgn510 bin]$ sh mb_or_kb.sh
+[varshagi@trgn510 bin]$ sh mb_or_kb.sh ~/.bashrc
  enter file name
 HG001_GRCh37_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-10X-SOLID_CHROM1-X_v.3.3.2_highconf_PGandRTGphasetransfer.vcf.gz
  file exists and is not empty
